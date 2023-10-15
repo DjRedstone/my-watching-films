@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+* {
+	font-family: 'Urbanist', sans-serif;
+	box-sizing: border-box;
+	transition: all .5s ease-in-out;
+}
+
+#loading-page {
+  display: grid;
+  position: fixed;
+  align-items: center;
+  justify-items: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://cdn.discordapp.com/attachments/555402600640413713/1121733841388843098/image.png");
+  z-index: 512;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+#loading-page-elements {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+#loading-page-elements h1 {
+  color: #EEE7D0;
+  font-size: 4em;
+  transform: translateY(-150px);
+}
+
+#language-button {
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  grid-gap: 10px;
+  top: 15px;
+  right: 15px;
+  width: 100px;
+  height: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  border-radius: 75px;
+  overflow: hidden;
+  z-index: 256;
+}
+.language-flag {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+.language-flag:hover {
+  transform: rotate(360deg);
+}
+#language-button-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background-color: #EEE;
+  border-radius: 75px;
+  filter: drop-shadow(0 0 5px black);
+  cursor: pointer;
+  z-index: 257;
+}
+
+#connection-page {
+	position: fixed;
+	top: 0;
+  left: 0%;
+	display: grid;
+  align-items: center;
+  justify-items: center;
+	margin: 0;
+	width: 100vw;
+  height: 100vh;
+	background-color: #275762;
+	overflow: hidden;
+	transition: width 2s ease-in-out, left 2s ease-in-out;
+	z-index: 255;
+}
+#connection-title {
+	color: white;
+	font-size: 4em;
+	margin-bottom: 25px;
+}
+#connect-tab {
+	display: flex;
+	flex-direction: column;
+	background-color: #4D7078;
+	width: 125%;
+	padding: 5% 10%;
+  border-radius: 15px;
+	margin-bottom: 100px;
+	transition: width .5s ease-in-out;
+}
+#connect-form {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 10px;
+	justify-items: center;
+	color: white;
+	font-size: 1.5em;
+	transition: none;
+}
+#create-account-button {
+	display: grid;
+  grid-template: "a b";
+  grid-gap: 15px;
+	align-items: center;
+	background-color: rgba(255, 255, 255, .5);
+	border: 1px solid white;
+	border-radius: 25px;
+	padding: 1.5% 3%;
+	cursor: pointer;
+	transition: background-color .25s ease-in-out;
+}
+#create-account-button:hover {
+	background-color: rgba(200, 200, 200, .5);
+}
+#create-account-checkbox {
+	width: 25px;
+  height: 25px;
+  border: 2px solid white;
+}
+#connection-show-password {
+	display: grid;
+  grid-template: "a b";
+  grid-gap: 15px;
+	align-items: center;
+	background-color: rgba(255, 255, 255, .5);
+	border: 1px solid white;
+	border-radius: 25px;
+	padding: 1.5% 3%;
+	font-size: 0.75em;
+	cursor: pointer;
+	transition: background-color .25s ease-in-out;
+}
+#connection-show-password:hover {
+	background-color: rgba(200, 200, 200, .5);
+}
+#connection-show-password-checkbox {
+	width: 25px;
+  height: 25px;
+  border: 2px solid white;
+}
+input[type=text], input[type=password],
+input[type=text]:focus, input[type=password]:focus {
+	outline: none;
+	font-size: 1em;
+	background: none;
+	border: none;
+	border-bottom: 1px white solid;
+	margin-bottom: 10px;
+	padding: 1%;
+	color: white;
+	transition: none;
+}
+input[type=text]::placeholder, input[type=password]::placeholder {
+	color: #AAA;
+	transition: color .25s ease-in-out;
+}
+input[type=text]:hover::placeholder, input[type=password]:hover::placeholder {
+	color: #CCC;
+}
+input[type=text]:disabled, input[type=password]:disabled {
+	cursor: not-allowed;
+}
+#connect-button {
+	background-color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 3% 5%;
+  font-size: 1em;
+  color: black;
+	transition: background-color .25s ease-in-out;
+}
+#connect-button:hover {
+	background-color: #CCC;
+}
+#connect-button:disabled {
+	cursor: not-allowed;
+	background-color: #AAA;
+}
+#connection-message {
+	color: white;
+	text-align: center;
+	transition: none;
+}
+
+#main-page {
+	position: fixed;
+	top: 0;
+  left: 0;
+	margin: 0;
+	width: 100vw;
+  height: 100vh;
+	background-color: #BA5C4A;
+}
+#navigation-bar {
+	display: grid;
+	position: absolute;
+	align-content: space-between;
+	justify-items: center;
+	top: 15px;
+  left: 15px;
+	width: 150px;
+	height: calc(100vh - 30px);
+	background-color: #D99F8D;
+	color: white;
+	border-radius: 25px;
+	overflow: hidden;
+}
+#navigation-bar-top {
+	display: grid;
+	grid-gap: 10px;
+	justify-items: center;
+}
+.navigation-bar-item {
+	display: grid;
+	justify-items: center;
+  align-items: center;
+	width: 150px;
+	height: 150px;
+	font-size: 1.25em;
+	cursor: pointer;
+	transition: background-color .25s ease-in-out;
+}
+.navigation-bar-item:hover {
+	background-color: #CA9484;
+}
+.navigation-bar-item img {
+	width: 100px;
+	height: 100px;
+	filter: invert(1);
+}
+.navigation-bar-item lord-icon {
+  width: 100px;
+  height: 100px;
+  zoom: 1.25;
+}
+.full-tab {
+	position: fixed;
+	width: calc(100vw - 225px);
+  height: calc(100vh - 30px);
+	top: 15px;
+  left: 200px;
+	color: white;
+  background-color: #B19D9A;
+  border-radius: 25px;
+	padding: 25px;
+	z-index: 1;
+	transition: opacity .25s ease-in-out;
+}
+.full-tab hr {
+	height: 3px;
+  background-color: white;
+}
+.full-tab h1 {
+	font-size: 3em;
+	margin: 0;
+}
+.full-tab h2 {
+	font-size: 2em;
+}
+.full-tab h3 {
+	font-size: 1.5em;
+}
+.info-message {
+	transition: none;
+}
+.requiredText {
+	color: red;
+}
+
+#add-search {
+	display: grid;
+	grid-template: "a b";
+	justify-items: center;
+  align-items: center;
+	grid-gap: 10px;
+}
+#add-search-film, #add-search-cine {
+  width: 100%;
+	padding: 0 3%;
+	padding-bottom: 3%;
+	background-color: #A79390;
+	border-radius: 20px;
+}
+#add-search-films, #add-search-cines {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 10px;
+}
+.add-searched-film, .add-searched-cine {
+	display: grid;
+	align-content: center;
+	text-align: center;
+	border-radius: 25px;
+	background-color: #AAA;
+	border: 2px solid #AAA;
+	padding: 1%;
+	cursor: pointer;
+	transition: background-color .25s ease-in-out;
+}
+.add-searched-film[selected=selected], .add-searched-cine[selected=selected] {
+	background-color: #3F3;
+}

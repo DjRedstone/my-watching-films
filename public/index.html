@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/png" href="https://whatemoji.org/wp-content/uploads/2020/07/Movie-Camera-Emoji.png">
+	<link rel="stylesheet" href="style.css"></link>
+	<title>MyWatchingFilm</title>
+</head>
+<body>
+  <!--------- LOADING PAGE ---------->
+  <div id="loading-page">
+     <div id="loading-page-elements">
+        <img src="https://cdn.dribbble.com/users/1913706/screenshots/4353135/reel-alwin.gif">
+        <h1>Loading...</h1>
+     </div>
+  </div>
+  <!-------- LANGUAGE BUTTON ------->
+  <div id="language-button">
+    <div id="language-button-up">
+      <img id="language-button-up-img" class="language-flag">
+    </div>
+  </div>
+	<!--------------- CONNECTION PAGE --------------->
+	<div id="connection-page" style="/*display: none;*/">
+		<div style="display: flex; flex-direction: column; align-items: center;">
+			<h1 id="connection-title" translate="no">MyWatchingFilm</h1>
+			<div id="connect-tab">
+				<form id="connect-form">
+					<div id="create-account-button">
+						<svg id="create-account-checkbox" width="30" height="30">
+							<path style="fill: rgba(255, 255, 255, 0)" d="M 2 15 L 10 20 L 20 4 L 17 2 L 10 15 L 3 12 Z"/>
+						</svg>
+						<span trans="connection-tab.create-account-button"></span>
+					</div>
+					<hr style="width: 100%; transition: none;">
+					<input type="text" id="connect-form-user" minlength="4" maxlength="16" required autocomplete="off" trans="connection-tab.user-input">
+					<input type="password" id="connect-form-password" minlength="8" maxlength="32" required autocomplete="off" trans="connection-tab.password-input">
+					<div id="connection-show-password">
+						<svg id="connection-show-password-checkbox" width="30" height="30">
+							<path style="fill: rgba(255, 255, 255, 0)" d="M 2 15 L 10 20 L 20 4 L 17 2 L 10 15 L 3 12 Z"/>
+						</svg>
+						<span trans="connection-tab.show-password"></span>
+					</div>
+					<input type="submit" id="connect-button" trans="connection-tab.login-signup">
+				</form>
+				<br>
+				<i class="info-message" id="connection-message"  trans="connection-tab.starting-info-message"></i>
+			</div>
+		</div>
+	</div>
+	<!--------------- MAIN PAGE --------------->
+	<div id="main-page">
+	  <div id="navigation-bar">
+			<div id="navigation-bar-top">
+				<div style="margin-top: 10px;" class="navigation-bar-item" id="nav-add-item">
+          <lord-icon
+            src="https://cdn.lordicon.com/tdxypxgp.json"
+            trigger="hover"
+            colors="primary:#ffffff,secondary:#ffffff">
+    </lord-icon>
+				  <span trans="main-page.navigation-bar.add-item"></span>
+				</div>
+				<div class="navigation-bar-item" id="nav-list-item">
+          <lord-icon
+            src="https://cdn.lordicon.com/gqdnbnwt.json"
+            trigger="hover"
+            colors="primary:#ffffff,secondary:#ffffff"
+          ></lord-icon>
+					<span trans="main-page.navigation-bar.list-item"></span>
+				</div>
+				<div class="navigation-bar-item" id="nav-friends-item">
+					<lord-icon
+            src="https://cdn.lordicon.com/zpxybbhl.json"
+            trigger="hover"
+            colors="primary:#ffffff,secondary:#ffffff"
+          ></lord-icon>
+					<span trans="main-page.navigation-bar.friends-item"></span>
+				</div>
+			</div>
+			<div style="margin-bottom: 10px;" class="navigation-bar-item" id="nav-settings-item">
+				<lord-icon
+          src="https://cdn.lordicon.com/sbiheqdr.json"
+          trigger="hover"
+          colors="primary:#ffffff,secondary:#ffffff"
+        ></lord-icon>
+				<span trans="main-page.navigation-bar.settings-item"></span>
+			</div>
+		</div>
+		<div style="opacity: 0;" class="full-tab" id="add-tab">
+			<h1 trans="main-page.add-tab.title"></h1>
+			<hr>
+			<h2 trans="main-page.add-tab.1st-subtitle"></h2>
+			<div id="add-search">
+				<div id="add-search-film">
+					<h3 trans="main-page.add-tab.select-film.title"></h3>
+					<input type="text" id="add-search-film-input" autocomplete="off" trans="main-page.add-tab.select-film.name-input">
+					<div id="add-search-films"></div>
+				</div>
+				<div id="add-search-cine">
+					<h3 trans="main-page.add-tab.select-cine.title"></h3>
+					<input type="text" id="add-search-cine-input" autocomplete="off" trans="main-page.add-tab.select-cine.name-input">
+					<div id="add-search-cines"></div>
+				</div>
+			</div>
+			<h2 trans="main-page.add-tab.2nd-subtitle"></h2>
+		</div>
+		<div style="opacity: 0;" class="full-tab" id="list-tab">
+			<h1 trans="main-page.list-tab.title"></h1>
+			<hr>
+		</div>
+		<div style="opacity: 0;" class="full-tab" id="friends-tab">
+			<h1 trans="main-page.friends-tab.title"></h1>
+			<hr>
+		</div>
+		<div style="opacity: 0;" class="full-tab" id="settings-tab">
+			<h1 trans="main-page.settings-tab.title"></h1>
+			<hr>
+			<h2 trans="main-page.settings-tab.data-title"></h2>
+			<div id="settings-user-data" style="border: 3px dotted white;
+    																			padding: 10px;">
+				<p id="settings-name" style="margin: 0; font-size: 1.75em;"></p>
+				<i id="settings-username"></i>
+			</div>
+			<h3 trans="main-page.settings-tab.name-title"></h3>
+			<form id="settings-edit-name">
+				<input type="text" id="settings-edit-name-input" required min="4" max="32">
+				<input type="submit">
+				<i class="info-message" id="settings-edit-name-info-message"></i>
+			</form>
+			<h3 trans="main-page.settings-tab.username-title"></h3>
+			<form id="settings-edit-username">
+				<input type="text" id="settings-edit-username-input" required min="4" max="16">
+        <input type="submit">
+				<i class="info-message" id="settings-edit-username-info-message"></i>
+			</form>
+			<h3 trans="main-page.settings-tab.password-title"></h3>
+			<form id="settings-edit-password">
+				<input type="password" id="settings-edit-password-input" required min="4" max="32">
+				<input type="checkbox" id="settings-edit-password-visibility">
+				<input type="submit">
+				<i class="info-message" id="settings-edit-password-info-message"></i>
+			</form>
+		</div>
+	</div>
+</body>
+  <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+	<script src="/jquery/jquery.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+		const socket = io();
+
+    socket.on("connect", () => {
+      console.log(`Connected as ${socket.id} !`);
+      // LOADING PAGE
+      $("#loading-page").css("opacity", 0);
+      setTimeout(() => {
+        $("#loading-page").css("display", "none");
+      }, 1000);
+    });
+
+    socket.on("disconnect", () => {
+      location.reload();
+    });
+	</script>
+	<script src="./traduction.js"></script>
+	<script src="./client.js"></script>
+</html>

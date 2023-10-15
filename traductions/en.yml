@@ -1,0 +1,93 @@
+error:
+  0: "An SQL error appeared"
+  1: "The user name or the password is wrong"
+  2: "The token is wrong"
+  3: "The user already exist"
+connection-tab:
+  create-account-button:
+    type: "text"
+    text: "I want to create an accout"
+  user-input:
+    type: "placeholder"
+    text: "User name"
+  password-input:
+    type: "placeholder"
+    text: "Password"
+  show-password:
+    type: "text"
+    text: "Show the password"
+  login-signup:
+    type: "value"
+    text: "Login"
+    text2: "Sign-up"
+  starting-info-message:
+    type: "text"
+    text: "Please login or create an accout"
+  waiting:
+    type: "text"
+    text: "Please waiting..."
+  welcome:
+    type: "text"
+    text: "Welcome!"
+main-page:
+  navigation-bar:
+    add-item:
+      type: "text"
+      text: "Add a film"
+    list-item:
+      type: "text"
+      text: "Films' list"
+    friends-item:
+      type: "text"
+      text: "Friends' list"
+    settings-item:
+      type: "text"
+      text: "Settings"
+  add-tab:
+    title:
+      type: "text"
+      text: "Add a film"
+    1st-subtitle:
+      type: "text"
+      text: "Select a film and a cinema"
+    select-film:
+      title:
+        type: "text"
+        text: "Film selecton<span class='requiredText'>*</span>"
+      name-input:
+        type: "placeholder"
+        text: "Film name"
+    select-cine:
+      title:
+        type: "text"
+        text: "Cinema selection"
+      name-input:
+        type: "placeholder"
+        text: "Cinema name"
+    2nd-subtitle:
+      type: "text"
+      text: "Add details"
+  list-tab:
+    title:
+      type: "text"
+      text: "Films"
+  friends-tab:
+    title:
+      type: "text"
+      text: "Friends"
+  settings-tab:
+    title:
+      type: "text"
+      text: "Settings"
+    data-title:
+      type: "text"
+      text: "Account data"
+    name-title:
+      type: "text"
+      text: "Edit name"
+    username-title:
+      type: "text"
+      text: "Edit username"
+    password-title:
+      type: "text"
+      text: "Edit password"

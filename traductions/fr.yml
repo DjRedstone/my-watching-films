@@ -1,0 +1,93 @@
+error:
+  0: "Une erreur SQL est apparue"
+  1: "Le nom du compte ou le mot de passe est incorrect"
+  2: "Le token est incorrect"
+  3: "L'utilisateur existe déjà"
+connection-tab:
+  create-account-button: 
+    type: "text"
+    text: "Je veux créer un compte"
+  user-input:
+    type: "placeholder"
+    text: "Nom du compte"
+  password-input:
+    type: "placeholder"
+    text: "Mot de passe"
+  show-password:
+    type: "text"
+    text: "Afficher le mot de passe"
+  login-signup:
+    type: "value"
+    text: "Se connecter"
+    text2: "S'inscrire"
+  starting-info-message:
+    type: "text"
+    text: "Veuillez vous connecter ou créer un compte"
+  waiting:
+    type: "text"
+    text: "Veuillez patientez..."
+  welcome:
+    type: "text"
+    text: "Bienvenue !"
+main-page:
+  navigation-bar:
+    add-item:
+      type: "text"
+      text: "Ajouter un film"
+    list-item:
+      type: "text"
+      text: "Liste des films"
+    friends-item:
+      type: "text"
+      text: "Liste des amis"
+    settings-item:
+      type: "text"
+      text: "Paramètres"
+  add-tab:
+    title:
+      type: "text"
+      text: "Ajouter un film"
+    1st-subtitle:
+      type: "text"
+      text: "Sélectionner le film et le cinéma"
+    select-film:
+      title:
+        type: "text"
+        text: "Sélection du film <span class='requiredText'>*</span>"
+      name-input:
+        type: "placeholder"
+        text: "Nom du film"
+    select-cine:
+      title:
+        type: "text"
+        text: "Sélection du cinéma"
+      name-input:
+        type: "placeholder"
+        text: "Nom du cinéma"
+    2nd-subtitle:
+      type: "text"
+      text: "Ajouter des détails"
+  list-tab:
+    title:
+      type: "text"
+      text: "Films"
+  friends-tab:
+    title:
+      type: "text"
+      text: "Amis"
+  settings-tab:
+    title:
+      type: "text"
+      text: "Paramètres"
+    data-title:
+      type: "text"
+      text: "Informations sur votre compte"
+    name-title:
+      type: "text"
+      text: "Modifier le nom"
+    username-title:
+      type: "text"
+      text: "Modifier le nom du compte"
+    password-title:
+      type: "text"
+      text: "Modifier le mot de passe"
